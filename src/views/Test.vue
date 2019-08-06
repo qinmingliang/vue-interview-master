@@ -45,8 +45,7 @@ export default {
   methods: {
     getData() {
       mock().then(backData => {
-        // console.log(backData);
-        // console.log(this.$store.getters.getAverage);
+        
         this.fullscreenLoading= false;
         this.dataList = [...this.dataList,...backData];
         
